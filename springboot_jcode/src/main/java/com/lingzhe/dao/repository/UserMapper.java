@@ -11,4 +11,6 @@ public interface UserMapper extends JpaRepository<User,Integer> , JpaSpecificati
     /*public List<User> findAll();*/
 
     public void deleteAllBy(Integer id);
+
+    public void saveOne(User user);
 }
