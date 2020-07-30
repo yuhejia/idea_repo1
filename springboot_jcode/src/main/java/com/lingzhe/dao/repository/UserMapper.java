@@ -9,4 +9,6 @@ import java.util.List;
 public interface UserMapper extends JpaRepository<User,Integer> , JpaSpecificationExecutor<User> {
 
     /*public List<User> findAll();*/
+
+    public void deleteAllBy(Integer id);
 }
