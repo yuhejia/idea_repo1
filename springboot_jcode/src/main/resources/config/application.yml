@@ -1,0 +1,12 @@
+#最基本的配置信息
+#springboot低层还是会把application.yml文件解析为application.properties文件
+#在项目中配置多个环境的方法   把不同的环境配置到yml中，需要的时候就加载到主配置文件中
+#application-dev.yml  开发环境
+#application-test.yml 测试环境
+#application-prod.yml 生产环境
+#对于需要的配置文件的加载，在主配置文件中application.yml中使用spring.profiles.active属性来配置。设置对应的{profile}值
+#
+#自定义配置文件（跟SpringBoot的application.yml同一目录下）
+spring:
+  profiles:
+    active: dev
